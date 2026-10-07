@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pablo Bermejo — Industrias Dolz</title>
+<meta name="description" content="Tarjeta de contacto de Pablo Bermejo Moreno, Marketing Department en Industrias Dolz S.A.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #19233f;
+    --blue-dark: #0f1628;
+    --ink: #19233f;
+    --mid: #19233f;
+    --light: #e6e8ed;
+    --bg: #ffffff;
+    --white: #ffffff;
+  }
+
+  html, body {
+    min-height: 100%;
+    background: var(--bg);
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    background: var(--white);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 12px 40px rgba(26,79,173,0.10);
+  }
+
+  .card-header {
+    background: var(--blue);
+    padding: 2.5rem 2rem 2rem;
+    position: relative;
+  }
+
+  .card-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0; right: 0;
+    height: 24px;
+    background: var(--white);
+    border-radius: 24px 24px 0 0;
+  }
+
+  .initials {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    border: 2px solid rgba(255,255,255,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.5px;
+    margin-bottom: 1.25rem;
+  }
+
+  .card-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin-bottom: 0.4rem;
+  }
+
+  .card-header .role {
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.5;
+  }
+
+  .card-body {
+    padding: 1.5rem 2rem 2rem;
+  }
+
+  .contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--light);
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.15s;
+  }
+
+  .contact-item:last-child { border-bottom: none; }
+  .contact-item:hover { opacity: 0.7; }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .icon svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--blue);
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .contact-info { display: flex; flex-direction: column; }
+
+  .contact-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--mid);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 1px;
+  }
+
+  .contact-value {
+    font-size: 0.93rem;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.4;
+  }
+
+  .btn-save {
+    display: block;
+    width: 100%;
+    margin-top: 1.75rem;
+    padding: 15px 20px;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+    letter-spacing: 0.01em;
+  }
+
+  .btn-save:hover { background: var(--blue-dark); }
+  .btn-save:active { transform: scale(0.98); }
+
+  .footer {
+    text-align: center;
+    padding: 1.25rem 2rem 1.5rem;
+    font-size: 0.72rem;
+    color: #aaa;
+    border-top: 1px solid var(--light);
+  }
+
+
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="card-header">
+    <div class="initials">PB</div>
+    <h1>Pablo Bermejo Moreno</h1>
+    <p class="role">Marketing Department<br>Industrias Dolz S.A.</p>
+  </div>
+
+  <div class="card-body">
+    <ul class="contact-list">
+
+      <li>
+        <a class="contact-item" href="tel:+34605445666">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.11 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Móvil</span>
+            <span class="contact-value">+34 605 445 666</span>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="contact-item" href="mailto:pablo.bermejo@idolz.com">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">pablo.bermejo@idolz.com</span>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="contact-item" href="https://www.idolz.com" target="_blank" rel="noopener">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Web</span>
+            <span class="contact-value">www.idolz.com</span>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+
+    <a class="btn-save" href="#" onclick="saveContact(event)">Guardar contacto</a>
+  </div>
+
+  <div class="footer">Industrias Dolz S.A. &mdash; Marketing Department</div>
+</div>
+
+<script>
+function saveContact(e) {
+  e.preventDefault();
+  var vcard = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'FN:Pablo Bermejo Moreno',
+    'N:Bermejo Moreno;Pablo;;;',
+    'ORG:Industrias Dolz S.A.',
+    'TITLE:Marketing Department',
+    'TEL;TYPE=CELL:+34605445666',
+    'EMAIL:pablo.bermejo@idolz.com',
+    'URL:https://www.idolz.com',
+    'END:VCARD'
+  ].join('\r\n');
+
+  var blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'pablo_bermejo.vcf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>
